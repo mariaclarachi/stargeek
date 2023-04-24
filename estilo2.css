@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5vh 95vh;
+    grid-template-areas:
+    "h h"
+    "i f"
+    ;
+}
+
+header{
+    grid-area: h;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    
+}
+
+
+
+header > nav > ul {
+    list-style: none;
+    display: flex;
+    column-gap: 15px;
+    color: white;
+}
+main {
+    grid-area: i;
+    background-image: url(img/capa\ cadastro.jpg);
+}
+aside{
+    grid-area: f;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    row-gap: 15px;
+}
+form > input {
+    border-radius: 5px;
+}
+
+form > input:hover{
+    background-color: aqua;
+}
+form > input[type="submit"]{
+    background-color: blue;
+    font-size: 2rem;
+    color: aliceblue;
+}
+
+form > label{
+    font-size: 2rem;
+}
+

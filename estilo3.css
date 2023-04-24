@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "h m f"
+    ;
+}
+
+header{
+    grid-area: h;
+    background-image: url(img/login.jpg);
+}
+
+main {
+    grid-area: m;
+    background: #CFD3D2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main > img{
+   margin-bottom: 60px;
+}
+ main > h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 92px;
+    margin-bottom: 20px;
+    color: black;
+ }
+
+ .home{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 25%;
+    margin-left: 25%;
+ }
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    row-gap: 140px;
+}
+
+form > input {
+    background: #193257;
+    border-radius: 25px;
+    height: 50px;
+}
+
+form > input [type= "submit"]:hover{
+    background-color: rgb(192, 190, 190);
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+
+form > div > input[type="submit"]{
+    background: #193257;;
+   border-radius: 20px;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 1.9rem;
+   line-height: 2.2rem;
+   margin-top: 70px;
+   width: 46%;
+   color: white;
+}
+
+form > label{
+    font-style: normal;
+    font-size: 1.9rem;
+    font-weight: 400;
+    line-height: 38px;
+    margin-top: 20px;
+}
+
+footer{
+    grid-area: f;
+    background-image: url(img/login.jpg);
+}

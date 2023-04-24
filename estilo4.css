@@ -1,0 +1,100 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "h m f"
+    ;
+}
+
+header{
+    grid-area: h;
+    background-image: url();
+    
+}
+
+main{
+    grid-area: m;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main>img{
+    margin-bottom: 60px;
+}
+
+main>h1{
+    font-family: 'Baloo Thambi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 92px;
+    margin-bottom: 20px;
+    color: #000000;
+
+}
+
+.home{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin-bottom: 140px;
+}
+
+form > input {
+    background: #BCBCBC;
+    border-radius: 25px;
+    height: 50px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+form >div> input[type="submit"]{
+    background: #135965;
+    border-radius: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.9rem;
+    line-height: 2.2rem;
+    margin-top: 70px;
+    width: 47%;
+    color: #FFFFFF;
+}
+
+form> div> input[type="submit"]:hover{
+    background-color:  #0E1DA5;
+}
+
+form > label{
+font-style: normal;
+font-weight: 400;
+font-size: 1.9rem;
+line-height: 38px;
+margin-top: 20px;
+}
+
+footer{
+    grid-area: f;
+    background-image:url(img/cadastro\ do\ item.jpg);
+}
