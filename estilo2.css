@@ -37,7 +37,7 @@ main {
 }
 aside{
     grid-area: f;
-    background-color: gray;
+    background-color:#CFD3D2 ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,7 +57,7 @@ form > input:hover{
     background-color: aqua;
 }
 form > input[type="submit"]{
-    background-color: blue;
+    background-color: #193257;
     font-size: 2rem;
     color: aliceblue;
 }
