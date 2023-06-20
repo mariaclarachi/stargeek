@@ -41,22 +41,48 @@ column-gap: 20px;
 row-gap: 20px;
 }
 
-.card{
+.cards {
+    margin: 30px 30px;
     display: flex;
-    flex-direction: column;
-
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.cardinfo{
-    background-color: black;
-    padding: 10px 20px;
+.card{
+    width: 300px;
+}
+
+.card img{
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    width: 300px;
+    height: 200px;
+}
+
+.cards img:hover{
+    opacity: 0.7;
+}
+
+.cardinfo {
+    width: 300px;
     display: flex;
     justify-content: center;
-    column-gap: 20px;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
 }
-.cardinfo a{
-font-size: 1.5rem;
+
+.cardnome {
     color: white;
-    text-decoration: none;
-   
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(253, 38, 124);
+    text-align: center;
+    margin-top: -5px;
+    padding: 20px;
+}
+
+.cardnome p{
+  font-size: 1rem;
+  font-weight: normal;
 }

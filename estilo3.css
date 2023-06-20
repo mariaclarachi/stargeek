@@ -51,7 +51,7 @@ form{
     display: flex;
     flex-direction: column;
     width: 70%;
-    row-gap: 140px;
+    row-gap: 10px;
 }
 
 form > input {
